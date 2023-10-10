@@ -5,6 +5,8 @@ import { EnhancedEditor, EnhancedDrawer, EnhancedModal, VideoCall } from 'compon
 import { useGeoLocation } from 'helpers';
 import { EnhancedTable } from 'components/index';
 import { LayoutConfig } from 'constants/index';
+import { Web3 } from 'web3';
+export const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 
 const useStyles = makeStyles(theme => createStyles({
   root: {
